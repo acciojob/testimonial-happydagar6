@@ -8,8 +8,14 @@
         .testimonial-container {
             background-color: #f5f5f5;
             padding: 40px;
-            /* Center the container and give it a maximum width */
-            width: 650px;
+            
+            /* CHANGED: Use max-width so it shrinks on small screens */
+            max-width: 650px;
+            width: 100%; 
+            
+            /* NEW: Ensures padding is included in the width calculation */
+            box-sizing: border-box; 
+            
             margin: 0 auto;
         }
 
