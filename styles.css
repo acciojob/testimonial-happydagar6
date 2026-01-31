@@ -1,39 +1,53 @@
-/*  your css code here. If applicable */
+body {
+            font-family: 'Times New Roman', Times, serif;
+            margin: 0;
+            /* Allow horizontal scroll if the text is extremely long */
+            overflow-x: auto; 
+        }
 
-.testimonial-container {
-	padding: 40px;
-	background-color: #f5f5f5;
-	max-width: 800px;
-	margin: 0 auto;
-}
+        .testimonial-container {
+            background-color: #f5f5f5;
+            padding: 40px;
+            
+            /* CRITICAL CHANGE: This allows the container to grow as wide as the text needs */
+            width: fit-content; 
+            min-width: 100%; /* Ensures it covers the screen width at minimum */
+            box-sizing: border-box; 
+        }
 
-h2 {
-	margin-top: 0;
-	margin-bottom: 20px;
-	font-size: 32px;
-	font-weight: bold;
-	color: black;
-}
+        h2 {
+            margin-top: 0;
+            margin-bottom: 20px;
+            font-size: 32px;
+            font-weight: bold;
+            color: black;
+        }
 
-.testimonial-box {
-	background-color: white;
-	padding: 20px 30px;
-	border: 1px solid #e0e0e0;
-	margin-bottom: 20px;
-	box-shadow: 0 2px 4px rgba(0,0,0,0.05);
-}
+        .testimonial-box {
+            background-color: white;
+            padding: 20px 30px;
+            border: 1px solid #e0e0e0;
+            margin-bottom: 20px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+            
+            /* Ensures the box grows with the text */
+            width: fit-content; 
+            min-width: 600px; /* Optional: keeps it from being too small */
+        }
 
-.testimonial-text {
-	font-size: 16px;
-	color: #333;
-	margin-bottom: 15px;
-	line-height: 1.4;
-}
+        .testimonial-text {
+            font-size: 16px;
+            color: #333;
+            margin-bottom: 15px;
+            
+            /* Force text to stay on one line */
+            white-space: nowrap; 
+        }
 
-.testimonial-author {
-	text-align: right;
-	font-style: italic;
-	font-weight: bold;
-	color: #333;
-	margin: 0;
-}
+        .testimonial-author {
+            text-align: right;
+            font-style: italic;
+            font-weight: bold;
+            color: #333;
+            margin: 0;
+        }
