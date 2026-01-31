@@ -1,53 +1,52 @@
-body {
+/* Apply a serif font to match the image */
+        body {
             font-family: 'Times New Roman', Times, serif;
             margin: 0;
-            /* Allow horizontal scroll if the text is extremely long */
-            overflow-x: auto; 
         }
 
+        /* Main Container: Padding, Background-color */
         .testimonial-container {
             background-color: #f5f5f5;
             padding: 40px;
-            
-            /* CRITICAL CHANGE: This allows the container to grow as wide as the text needs */
-            width: fit-content; 
-            min-width: 100%; /* Ensures it covers the screen width at minimum */
-            box-sizing: border-box; 
+            /* Center the container and give it a maximum width */
+            width: 650px;
+            margin: 0 auto;
         }
 
-        h2 {
+        /* Styling for the heading */
+        .testimonial-heading {
             margin-top: 0;
-            margin-bottom: 20px;
+            margin-bottom: 25px;
             font-size: 32px;
             font-weight: bold;
-            color: black;
+            color: #000;
         }
 
+        /* Testimonial Box: Padding, Border, Background-color */
         .testimonial-box {
             background-color: white;
-            padding: 20px 30px;
-            border: 1px solid #e0e0e0;
+            padding: 25px;
+            border: 1px solid #dcdcdc; /* Light grey border */
+            /* Stack boxes vertically with space between them */
             margin-bottom: 20px;
+            /* Optional: Add a very subtle shadow */
             box-shadow: 0 2px 4px rgba(0,0,0,0.05);
-            
-            /* Ensures the box grows with the text */
-            width: fit-content; 
-            min-width: 600px; /* Optional: keeps it from being too small */
         }
 
+        /* Text: Normal styling */
         .testimonial-text {
             font-size: 16px;
+            line-height: 1.5;
             color: #333;
+            margin-top: 0;
             margin-bottom: 15px;
-            
-            /* Force text to stay on one line */
-            white-space: nowrap; 
         }
 
+        /* Author: Text-align right, Font-style italic */
         .testimonial-author {
             text-align: right;
             font-style: italic;
             font-weight: bold;
-            color: #333;
+            color: #000;
             margin: 0;
         }
